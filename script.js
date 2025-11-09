@@ -9,7 +9,7 @@ const map = new mapboxgl.Map({
 map.on('load', function() {
   map.addSource('points-data', {
     type: 'geojson',
-    data: 'https://raw.githubusercontent.com/spencerowen-collab/BAHA-Map/refs/heads/main/data/183data.geojson'
+    data: 'https://raw.githubusercontent.com/spencerowen-collab/BAHA-Map/refs/heads/main/data/183data%20(2).geojson'
   });
 
   map.addLayer({
