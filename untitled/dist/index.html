@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.css'><link rel="stylesheet" href="./style.css">
+  </head>
+    
+  <body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.js'></script>
+    <script  src="./script.js"></script>
+  <h1> Julia Morgan Heritage Map of Berkeley</h1>
+     <button id="toggle-btn">Hide Description</button>
+     <h2 id="description">
+    Julia Morgan (1872–1957) was a pioneering American architect and the first woman to earn an architecture degree from the École des Beaux-Arts in Paris. Before that, she graduated in 1894 from the University of California, Berkeley, becoming the first woman to receive a B.S. degree in civil engineering from the university with honors. Over her career, she designed more than 700 buildings across California, celebrated for their craftsmanship, structural innovation, and harmony with their surroundings. Morgan had a deep connection to Berkeley, where she designed several notable buildings, including the Berkeley City Club, or the “Little Castle”, and helped shape the city’s architectural identity through her involvement in the Arts and Crafts movement. This map focuses on the eleven buildings she designed that were designated Berkeley Landmarks by the Landmarks Preservation Commission.
+  </h2>
+ <script>
+          const description = document.getElementById('description');
+    const toggleBtn = document.getElementById('toggle-btn');
+
+    toggleBtn.addEventListener('click', () => {
+      description.classList.toggle('hidden');
+
+      if (description.classList.contains('hidden')) {
+        toggleBtn.textContent = 'Show Description';
+      } else {
+        toggleBtn.textContent = 'Hide Description';
+      }
+    }); </script>
+</body>
+<div id="map">
+</div>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
