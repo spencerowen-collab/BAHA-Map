@@ -3,7 +3,7 @@ const map = new mapboxgl.Map({
   container: 'map', // container ID
   style: 'mapbox://styles/invisiblelemons/cmh9dc4ob009l01rack870wd6',
   center: [-122.27, 37.87], // starting position [lng, lat]. Note that lat must be set between -90 and 90
-  zoom: 9 // starting zoom
+  zoom: 11 // starting zoom
     });
 
 map.on('load', function() {
@@ -32,7 +32,7 @@ map.on('load', function() {
         <div>
             <h3>${properties.Landmark}</h3>
             <p><strong>Address:</strong> ${properties.Address}</p>
-            <p><strong>Architect & Date:</strong> ${properties.Architect + Date}</p>
+            <p><strong>Architect & Date:</strong> ${properties.Architect and Date}</p>
             </p>${properties.Link ? `<p><a href="${properties.Link}" target="_blank">More Information</a></p>` : ''}
             ${properties.Notes ? `<p><strong>Notes:</strong> ${properties.Notes}</p>` : ''}
         </div>
